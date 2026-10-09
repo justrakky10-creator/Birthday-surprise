@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#160f18">
+  <title>For My Bestie ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true"></div>
+  <div class="hearts" aria-hidden="true"></div>
+  <div class="cute-floaters" aria-hidden="true"></div>
+  <section class="opening" id="opening">
+    <div class="opening-glow"></div>
+    <div class="envelope-scene">
+      <p class="mini-label">A LITTLE SOMETHING, MADE JUST FOR YOU</p>
+      <div class="gift-box">🎁</div>
+      <h1>Hey, Birthday Baby girl.</h1>
+      <p class="opening-copy opening-item">I could've just said “happy birthday”...</p>
+      <p class="opening-copy soft opening-item">but where's the fun in that? 👀</p>
+      <button class="primary opening-button opening-item" onclick="openGift()">Open your little world <span>✦</span></button>
+      <p class="tiny">oiii… scroll slowly biss. I put lot of effort for this.</p>
+    </div>
+  </section>
+
+  <main id="site" class="site hidden">
+    <header class="hero section-pad">
+      <div class="hero-badge">✦ BIRTHDAY ARCHIVE ✦</div>
+      <h2>Happy Birthday,<br><em>my fav drama queen.</em> 💗</h2>
+      <p>Welcome to our tiny corner of the internet — full of beautiful photos, very serious funny memories, and one person I'm extremely grateful I met.</p>
+      <div class="scroll-cue">↓ keep going ↓</div>
+    </header>
+
+    <section class="intro section-pad">
+      <div class="section-number">01</div>
+      <div>
+        <p class="eyebrow">THE IMPORTANT PART</p>
+        <h3>Some people become memories.<br><em>Some become home.</em></h3>
+        <p class="lead">This is a tiny collection of the friends, places, chaos and random little moments that somehow became our story. Hope you like it.💖</p>
+      </div>
+    </section>
+
+    <section class="gallery-section section-pad">
+      <div class="section-head">
+        <div><p class="eyebrow">02 · PHOTO EVIDENCE</p><h3>Proof that we actually went outside.</h3></div>
+        <span class="sticker">swipe / tap / zoom ✨</span>
+      </div>
+      <div class="gallery">
+        <button class="memory-photo wide" onclick="openLightbox(1)"><img src="images/photo1.jpg" alt="A group memory"><span>the chaos committee</span></button>
+        <button class="memory-photo landscape" onclick="openLightbox(2)"><img src="images/photo2.jpg" alt="School memory"><span>school-era evidence</span></button>
+        <button class="memory-photo landscape" onclick="openLightbox(3)"><img src="images/photo3.jpg" alt="Bestie selfie"><span>main character behaviour</span></button>
+        <button class="memory-photo landscape" onclick="openLightbox(4)"><img src="images/photo4.jpg" alt="Funny friend photo"><span>movie timee</span></button>
+        <button class="memory-photo landscape photo5-fix" onclick="openLightbox(5)"><img src="images/photo5.jpg" alt="Funny selfie"><span>professional nonsense</span></button>
+        <button class="memory-photo portrait" onclick="openLightbox(6)"><img src="images/photo6.jpg" alt="Friend and cat collage"><span>the cat department 🐈</span></button>
+        <button class="memory-photo landscape" onclick="openLightbox(7)"><img src="images/photo7.jpg" alt="Friends photo"><span>the photo we definitely needed</span></button>
+        <button class="memory-photo landscape" onclick="openLightbox(8)"><img src="images/photo8.jpg" alt="Friends group photo"><span>our  beautiful gang❤️</span></button>
+        <button class="memory-photo portrait" onclick="openLightbox(9)"><img src="images/photo9.jpg" alt="Funny bestie photo"><span>caught in 4k</span></button>
+        <button class="memory-photo portrait" onclick="openLightbox(10)"><img src="images/photo10.jpg" alt="Friends sitting together"><span>Best memory out there😁</span></button>
+      </div>
+    </section>
+
+    <section class="timeline-section section-pad">
+      <div class="section-head"><div><p class="eyebrow">03 · MEMORY LANE</p><h3>A few chapters from our nonsense.</h3></div></div>
+      <div class="timeline">
+        <article><span>✦</span><div><small>CHAPTER ONE</small><h4>We sat near and it started normally.</h4><p>And then somehow we became the kind of people who have too many photos and too many inside jokes.😁</p></div></article>
+        <article><span>♡</span><div><small>CHAPTER TWO</small><h4>Even random days became the good days.</h4><p>No fancy plans required. Give us a normal day and we'll probably turn it into a story.😎</p></div></article>
+        <article><span>☻</span><div><small>CHAPTER THREE</small><h4>Chaos became a personality trait.</h4><p>There are memories that should never see daylight. Obviously, i'll remember them 4ever tho.😂</p></div></article>
+        <article><span>∞</span><div><small>CHAPTER FOUR</small><h4>More memories loading...</h4><p>This page is not the ending. We still have a suspicious amount of life left to make fun of.😜</p></div></article>
+      </div>
+    </section>
+
+    <section class="interactive section-pad">
+      <div class="section-head"><div><p class="eyebrow">04 · VERY IMPORTANT RESEARCH</p><h3>Bestie awards 🏆</h3></div></div>
+      <div class="award-grid">
+        <button onclick="revealAward(this)"><b>🏆</b><strong>QUEEN of Dramas</strong><span>tap to know why</span><em>You somehow make ordinary conversations become a full documentary.</em></button>
+        <button onclick="revealAward(this)"><b>😭</b><strong>Professional Annoyance</strong><span>tap to know why</span><em>Annoying? yes. Replaceable? absolutely not.</em></button>
+        <button onclick="revealAward(this)"><b>🫶</b><strong>Lifetime Bestie</strong><span>tap to know why</span><em>No unsubscribe button exists. I already checked it hehe.</em></button>
+        <button onclick="revealAward(this)"><b>✨</b><strong>Best Memory Collector</strong><span>tap to know why</span><em>Somehow you are in an unreasonable percentage of my favourite memories.</em></button>
+      </div>
+    </section>
+
+    <section class="quiz-section section-pad">
+      <div class="quiz-card">
+        <p class="eyebrow">05 · THE BESTIE TEST™</p>
+        <h3>Let's see if you actually know us.</h3>
+        <div class="question" data-correct="2"><p>Our official friendship language?</p><div><button onclick="quiz(this,1)">Formal English</button><button onclick="quiz(this,2)">Random nonsense</button><button onclick="quiz(this,1)">Telepathy</button></div></div>
+        <div class="question" data-correct="2"><p>What do we have way too much of?</p><div><button onclick="quiz(this,1)">Homework</button><button onclick="quiz(this,2)">Photos & memories</button><button onclick="quiz(this,1)">Common sense</button></div></div>
+        <div class="question" data-correct="2"><p>Any plan to be besties for life?</p><div><button onclick="quiz(this,2)">Obviously.</button><button onclick="quiz(this,2)">YESSS</button></div></div>
+        <div class="question" data-correct="2"><p>How much do you love me?</p><div><button onclick="quiz(this,1)">100%</button><button onclick="quiz(this,2)">1000%</button><button onclick="quiz(this,2)">Infinte</button></div></div>
+        <p id="quiz-result" class="result"></p>
+      </div>
+    </section>
+
+    <section class="letter-section section-pad">
+      <div class="letter-card">
+        <p class="eyebrow">06 · THE SOFT PART</p>
+        <h3>Okay fine… one serious paragraph alr.</h3>
+        <button class="letter-button" onclick="openLetter()">💌 Open the letter</button>
+        <div id="letter" class="letter hidden">
+          <p>Happy birthday, Ma Dums. 🥹</p>
+          <p>we're officially major dummy hahaha.🎉 Congratulations on turning 18 Karunyaaaaa😆.I hope you know that you're always the best part in my life. The random conversations,the dramas, the stupid jokes, the photos we took and all those ordinary days that somehow became memories I want to keep😉.</p>
+          <p>Life is changing into a lot,its fun, its hard, happy, exhausting, wonderful and I don't know exactly what all gonna come at us.🙈I know you having a hard time at the hostel, Hope all the insects annoying you will go away But I really hope there are a LOT more stories, laughs, photos and completely unnecessary but enjoyable adventures waiting for you.🎀✨</p>
+          <p>I may not have a big part in your chapters anymore,and i may not be in your fav memories anymore, we may totally change and talk less and i may be the reason cuz i don't call first at all, i'm sorry for that But biss don't you dare forget I'm always excited and happy when talking with you and you have no idea how much i miss yaa🫶 </p>
+          <p>Know that i plan to be besties till we become grannies, tho you are already one, Gambare karu obacha.🧝‍♂️ And hope you know that I'm always there for u as ur dummy.Keep being you, Take care of yourself, do the things that makes you happy, and remember that there is always someone in your corner cheering for you and loving you for you</p>
+          <p class="signature">Happy birthday, Baka.🎊 You mean a lot to me. Love yaaa 💗<br>— your favourite twin, obviously</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cake-section section-pad">
+      <div class="cake-card">
+        <p class="eyebrow">07 · ONE LAST THING</p>
+        <h3>Make a wish.</h3>
+        <p>You've reached the part where I made this webby to deliver cake.</p>
+        <div class="cake-scene" id="cakeScene">
+          <div class="flame f1"></div><div class="flame f2"></div><div class="flame f3"></div>
+          <div class="candles"><span></span><span></span><span></span></div>
+          <div class="cake-top"></div><div class="cake-body"><i></i><i></i><i></i></div><div class="plate"></div>
+        </div>
+        <button class="primary" onclick="makeWish()">Make a wish, Dums💖✨</button>
+        <p id="wishMessage" class="wish"></p>
+      </div>
+    </section>
+<!-- 🎁 BRAND NEW FINAL SURPRISE -->
+<section class="finale section-pad">
+  <div class="final-card">
+    <p class="eyebrow">08 · THE BIG SURPRISE</p>
+    <h2>Wait… you're not done yet! 👀💗</h2>
+    <p>I've saved one last little thing just for you.</p>
+
+    <button class="primary" id="surpriseButton"
+            onclick="openFinalSurprise()">
+      Open your surprise 🎁
+    </button>
+
+    <div id="surpriseScene" class="surprise-scene hidden">
+      <div class="surprise-doll">🧸</div>
+      <h3>Your tiny birthday delivery! 💌</h3>
+      <div id="surpriseGift" class="surprise-gift">🎁</div>
+
+      <p class="surprise-hint">Tap the gift, birthday girl! ✨</p>
+
+      <div id="surpriseReveal" class="hidden">
+        <div class="surprise-photo">
+          <img src="images/photo9.jpg" alt="A favourite memory">
+        </div>
+
+        <h3>To ma dumbo, ma dummy,ma dums,ma bestie 💗</h3>
+        <p class="surprise-note">
+          Cheers to the adult you gonna become, looking forward to it.
+          No matter how much life changes, you'll always be
+          someone very special to me. Thank you for being there bbs. ♡
+        </p>
+        <p class="surprise-signature">Happy Birthday, Dums! 🎂💖</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer><p>made with too much effort & a suspicious amount of love ♡</p><button onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ back to the top</button></footer>
+  </main>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox(event)"><button onclick="closeLightbox()">×</button><img id="lightbox-img" src="" alt="Memory"><p id="lightbox-caption"></p></div>
+  <div id="confetti"></div>
+  <script src="script.js"></script>
+</body>
+</html>
